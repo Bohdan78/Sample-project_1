@@ -20,7 +20,7 @@ public class MeteorView : MonoBehaviour {
         if(target.tag == "Bullet")
         {
             meteorDamage.TakeDamage(meteorDamage.damage);
-            target.transform.parent.SendMessage("SetOff", null, SendMessageOptions.DontRequireReceiver);
+            target.GetComponentInParent<IPoolable>().SetOff();
         }
         else if (target.tag == "Player")
         {

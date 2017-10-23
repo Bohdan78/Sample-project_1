@@ -28,7 +28,7 @@ public class BuildingProperties : MonoBehaviour {
 
     void ObjectData()
     {
-        Debug.Log("Object "+ objName + " . Size on map is: "+size+" . Unic id: "+id);
+        Debug.Log("Object name is"+ objName + " . Size on map is: "+size+" . Unic id: "+id);
     }
 	
 	

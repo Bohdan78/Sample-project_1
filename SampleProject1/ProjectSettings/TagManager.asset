@@ -4,13 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - bullet
-  - player
-  - obstacle
-  - bulletPool
-  - obstacleType1
-  - obstacleType2
-  - obstacleType3
+  - asteroid
+  - ship
+  - BulletPool
+  - Bullet
+  - Meteor
+  - Controller
   layers:
   - Default
   - TransparentFX

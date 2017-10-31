@@ -6,4 +6,4 @@ SampleProject2 - Basic strategy field with autofill, grid for placing objects ( 
 
 SampleProject3 - Main side of project about seting and detecting "empty area taps" for analytics. Also implementation of save/load via player prefs + AES ecryption/decription for saved data.
 
-SampleProject4 - deep.io game sample (single, some basic functionality).
+SampleProject4 - Diep.io game sample (single, some basic functionality).

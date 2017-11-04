@@ -40,8 +40,6 @@ public class DataManager : MonoBehaviour, IDataManager
 		
 	}
 
-    
-
     public Vector2 [] SetupPikes(IReasorceItemPooler obj, string signature)
     {
         if(signature == triangleSign)

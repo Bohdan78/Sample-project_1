@@ -13,7 +13,6 @@ public class BuildingProperties : MonoBehaviour {
     {
         objName = transform.parent.name;
         id = transform.parent.name + " " + transform.GetSiblingIndex();
-
     }
 
     private void OnEnable()

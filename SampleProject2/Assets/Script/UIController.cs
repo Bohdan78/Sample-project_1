@@ -73,8 +73,6 @@ public class UIController : MonoBehaviour {
         CameraController.Instance.AllowMoveCamera();
     }
 
-
-
     private void SwitchMButtonText(bool clk, int m, int n)
     {
         if(clk)
@@ -88,6 +86,5 @@ public class UIController : MonoBehaviour {
             buttonViwes[m].SetActive(false);
             buttonViwes[n].SetActive(true);
         }
-
     }
 }

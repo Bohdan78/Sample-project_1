@@ -24,11 +24,6 @@ public class Pooler : MonoBehaviour {
 		
 	}
 
-    private void FirstSpawn()
-    {
-
-    }
-
     public void SpawnObject(Transform pool)
     {
         try

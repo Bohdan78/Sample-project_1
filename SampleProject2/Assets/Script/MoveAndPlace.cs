@@ -64,13 +64,7 @@ public class MoveAndPlace : MonoBehaviour {
             StartCoroutine(CycleZ(9, zMax, new Vector2(-29, -34)));
             
         }
-
-
-
-        
     }
-
-    
 
     private IEnumerator CycleX(int start, float limit, Vector2 range)
     {
@@ -117,7 +111,6 @@ public class MoveAndPlace : MonoBehaviour {
             Vector3 nPosition = new Vector3(Random.Range(range.x, range.y), 0, -limit / 2 + c);
             container.position = nPosition;
             DetectObjects.Instance.Scan(nPosition, radius);
-           // print(nPosition);
             yield return null;
         }
 

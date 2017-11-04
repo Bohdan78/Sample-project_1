@@ -10,7 +10,6 @@ public class CameraController : MonoBehaviour {
     public GameObject container;
 
     public Transform platform;
-    public float distance;
 
     private Vector3 mousePos;
     private Vector3 velocity = Vector3.zero;
@@ -52,7 +51,6 @@ public class CameraController : MonoBehaviour {
         if (dirrection == 1)
         {
             dirrection = -1;
-           // diffDistance = 7f;
         }
         else if (dirrection != 1)
         { 
@@ -90,27 +88,23 @@ public class CameraController : MonoBehaviour {
 	
 	void LateUpdate ()
     {
-       // distance = Vector3.Distance(transform.position, platform.position);
-
         if (Input.GetMouseButtonDown(0))
         {
-
             mousePos = Input.mousePosition;
 
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
             if (Physics.Raycast(ray, out hit))
             {
-                //print("POINT" + hit.point);
                 startPosition = hit.point;
             }
+
             else
             {
                 mousePos.z = Camera.main.transform.position.y;
                 startPosition = Camera.main.ScreenToWorldPoint(mousePos);
             }
-
-
         }
 
         else if (Input.GetMouseButton(0) && cameraMove == MoveCamera.ALLOW)
@@ -128,6 +122,7 @@ public class CameraController : MonoBehaviour {
                 
             }
         }
+
         if(Input.GetMouseButtonUp(0))
         {
             startPosition = Vector3.zero;
@@ -152,15 +147,4 @@ public class CameraController : MonoBehaviour {
         if (transform.position.y == pY && transform.eulerAngles.y == eX)
             allowZoom = false;
     }
-
-      
-
-//#if UNITY_EDITOR || UNITY_STANDALONE
-
-//#else
-
-//#endif
-    
-
-    
 }

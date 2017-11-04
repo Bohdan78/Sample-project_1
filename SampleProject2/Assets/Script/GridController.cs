@@ -55,7 +55,6 @@ public class GridController : MonoBehaviour {
             maxLimitZ = platformSizeZ / 2 - 1.5f;
         }
 
-        //print(input.x + " " + input.z + " " + nX + " " + nZ);
         return new Vector3(Mathf.Clamp(nX, -maxLimitX, maxLimitX), input.y , Mathf.Clamp(nZ, -maxLimitZ, maxLimitZ));
     }
 
@@ -70,7 +69,6 @@ public class GridController : MonoBehaviour {
         {
             CreateLine(verticalGroup, c, platformSizeZ);
         }
-
 
         horizontalGroup.localPosition = new Vector3(0, 0, -platformSizeZ / 2);
         verticalGroup.localPosition = new Vector3(-platformSizeX / 2, 0, 0);

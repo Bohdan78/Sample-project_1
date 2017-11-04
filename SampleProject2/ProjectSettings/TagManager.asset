@@ -4,9 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - onMapObject
-  - grid
-  - platform
+  - dataManager
+  - triangle
+  - square
+  - pentagon
+  - bullet
+  - bulletPool
+  - scoreManager
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -16,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - objOnMap
+  - 
   - 
   - 
   - 
@@ -44,6 +49,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 4239418473
+  - name: Back
+    uniqueID: 3768811025
     locked: 0
